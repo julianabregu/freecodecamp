@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Encuesta Sistemas Operativos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Encuesta Sistema Operativo</h1>
+      <p id="description">
+        Gracias por responder esta encuesta sobre sistemas operativos.
+      </p>
+      <form id="survey-form">
+        <div class="form-control">
+          <label id="name-label"
+            >Nombre
+            <input
+              id="name"
+              type="text"
+              placeholder="Ingresa tu nombre"
+              required
+          /></label>
+        </div>
+
+        <div class="form-control">
+          <label id="email-label"
+            >Email
+            <input
+              id="email"
+              type="email"
+              placeholder="Ingresa tu email"
+              required
+          /></label>
+        </div>
+
+        <div class="form-control">
+          <label id="number-label"
+            >Edad <small>(opcional)</small>
+            <input
+              id="number"
+              type="number"
+              min="10"
+              max="100"
+              placeholder="Edad"
+          /></label>
+        </div>
+
+        <div class="form-control">
+          <label id="dropdown-label"
+            >A que te dedicas actualmente?
+            <select id="dropdown">
+              <option disabled selected value>Selecciona una opcion</option>
+              <option>Estudiante</option>
+              <option>Trabajador</option>
+              <option>Otro</option>
+              <option>Prefiero no decirlo</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="form-control">
+          <p>Que sistema operativo utilizas en tu dia a dia?</p>
+          <label
+            ><input
+              type="radio"
+              name="os-preference"
+              value="macos"
+              class="inline"
+            />
+            MacOS</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="os-preference"
+              value="windows"
+              class="inline"
+            />
+            Windows</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="os-preference"
+              value="linux"
+              class="inline"
+            />
+            Linux</label
+          >
+        </div>
+
+        <div class="form-control">
+          <p>Para que tareas utilizas dicho sistema operativo?</p>
+          <label
+            ><input type="checkbox" value="work" class="inline" />
+            Trabajar</label
+          >
+          <label
+            ><input type="checkbox" value="study" class="inline" />
+            Estudiar</label
+          >
+          <label
+            ><input type="checkbox" value="gaming" class="inline" />
+            Gaming</label
+          >
+          <label
+            ><input type="checkbox" value="navigation" class="inline" /> Navegar
+            por internet</label
+          >
+        </div>
+
+        <div class="form-control">
+          <p>
+            Cuentanos brevemente que cosas te gustan y no te gustan de tal
+            sistema operativo
+          </p>
+          <textarea cols="30" rows="5" placeholder="Escribe aqui..."></textarea>
+        </div>
+
+        <div class="form-control">
+          <input type="submit" id="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
